@@ -8,7 +8,7 @@ export function getPocketBaseClient(): PocketBase | undefined {
 	}
 
 	try {
-		pocketBaseClient = new PocketBase('http://localhost:8090');
+		pocketBaseClient = new PocketBase(Deno.env.get('POCKETBASE_URL'));
 		return pocketBaseClient;
 	} catch (e) {
 		const error = e as ClientResponseError;

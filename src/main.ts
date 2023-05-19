@@ -7,6 +7,8 @@ import {
 	RetrospectivesStateOptions,
 } from './lib/types/pocketbase-types.ts';
 
+// POCKETBASE_URL=http://localhost:8090 deno run --allow-net --allow-env src/main.ts
+
 async function setRetroStateToInProgress(): Promise<void> {
 	const pbClient = getPocketBaseClient();
 
