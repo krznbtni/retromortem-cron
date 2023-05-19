@@ -1,0 +1,37 @@
+{
+  "fmt": {
+    "exclude": [
+      "src/testdata/"
+    ],
+    "include": [
+      "src/"
+    ],
+    "indentWidth": 4,
+    "lineWidth": 80,
+    "proseWrap": "preserve",
+    "singleQuote": true,
+    "useTabs": true
+  },
+  "lint": {
+    "exclude": [
+      "src/testdata/"
+    ],
+    "include": [
+      "src/"
+    ],
+    "rules": {
+      "exclude": [
+        "no-unused-vars"
+      ],
+      "include": [
+        "ban-untagged-todo"
+      ],
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  }
+}
